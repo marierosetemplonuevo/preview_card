@@ -18,7 +18,7 @@ body {
 }
 
 img {
-  width: 30%;
+  width: 67.8px;
   height: auto;
   margin: 25px 15px 10px;
 }
@@ -86,4 +86,37 @@ a {
 
 .btn__luxury:hover {
   color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 100%;
+  }
+
+  .card-group {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  img {
+    width: 67.8px;
+    height: auto;
+  }
+
+  .card-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-group > .card {
+    width: 90%;
+    height: auto;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
 }
